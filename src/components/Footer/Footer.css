@@ -1,0 +1,20 @@
+.footer {
+  background: var(--Gray-Blue-gray-100, #f1f5f9);
+}
+
+.footer-wrap {
+  margin-top: 4.8rem;
+  padding: 4.8rem 12rem;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.footer__contact,
+.footer__address {
+  font-size: 16px;
+}
+
+.footer__contact li:nth-child(1), .footer__address li:nth-child(1) {
+    font-family: Inter-SemiBold;
+    margin-bottom: 8px;
+}
