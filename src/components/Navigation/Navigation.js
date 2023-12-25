@@ -3,14 +3,17 @@ import { Link as ScrollLink } from "react-scroll";
 import "./Navigation.css";
 import logo from "../../assets/icons/haoyuan.svg";
 import hamburgerIcon from "../../assets/icons/hamburger-icon.svg";
-
-const menu = [
-  { id: "products", name: "Mahsulotlar" },
-  { id: "projects", name: "Loyihalar" },
-  { id: "faq", name: "FAQ" },
-];
+import { useTranslation } from "react-i18next";
+import useData from "../../data";
 
 const Navigation = () => {
+  const { i18n, t } = useTranslation();
+  const data = useData();
+
+  const changeLanguage = (e) => {
+    i18n.changeLanguage(e.target.value);
+  };
+
   const handleHamburgerClick = () => {
     let navigation = document.querySelector(".navigation__menu");
     navigation.classList.toggle("active");
@@ -33,11 +36,11 @@ const Navigation = () => {
         <ul className="navigation__menu ">
           <li className="navigation__item">
             <Link to="about" className="navigation__link">
-              Biz haqimizda
+              {t("navigation.about")}
             </Link>
           </li>
 
-          {menu.map((item) => (
+          {data.navigation.map((item) => (
             <li
               key={item.id}
               className="navigation__item"
@@ -53,13 +56,18 @@ const Navigation = () => {
           <a href="tell:+998943243636">+998910139888</a>
         </div>
 
-        <select name="language" id="language" className="navigation__select">
+        <select
+          name="language"
+          id="language"
+          className="navigation__select"
+          onChange={changeLanguage}
+        >
           <option value="uz">O'zbek</option>
           <option value="ru">Русский</option>
         </select>
 
         <ScrollLink to="contact" className="navigation__contact-button">
-          Buyurtma
+          {t("navigation.button")}
         </ScrollLink>
         <div className="hamburger-icon" onClick={handleHamburgerClick}>
           <img src={hamburgerIcon} alt="" />

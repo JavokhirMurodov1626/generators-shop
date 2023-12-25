@@ -7,23 +7,18 @@ import generator2 from "../../assets/images/hero_slide_2.webp";
 import generator3 from "../../assets/images/hero_slide_3.webp";
 import generator4 from "../../assets/images/hero_slide_4.webp";
 import generator5 from "../../assets/images/hero_slide_5.webp";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section className="hero">
       <div className="container hero__wrap">
         <div className="hero__left">
-          <h1 className="hero__title">
-            "Har qanday ehtiyoj uchun sifatli generatorlar"
-          </h1>
-          <p className="hero__text">
-            Turli quvvat ehtiyojlariga moslashtirilgan bardoshli va samarali
-            generatorlarni topish uchun kollektsiyamizni o'rganing. Har qanday
-            ob-havo sharoiti uchun ishonchli energiya yechimlari bilan
-            makoningizni ko'taring.
-          </p>
+          <h1 className="hero__title">{t("hero.title")}</h1>
+          <p className="hero__text">{t("hero.text")}</p>
           <ScrollLink to="contact" className=" hero__btn">
-            Bog'lanish
+            {t("hero.button")}
           </ScrollLink>
         </div>
         <div className="swiper-wrap">

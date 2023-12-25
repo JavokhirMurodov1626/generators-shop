@@ -32,6 +32,7 @@
   color: #334155;
   font-family: Inter-Regular;
   font-size: 16px;
+  margin-bottom: 10px!important;
 }
 .contact__form input {
   padding: 1.2rem 1.6rem;
@@ -83,15 +84,13 @@ textarea::placeholder {
   border-radius: 24px;
 }
 
-
-
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
   .contact {
     padding: 5.6rem 4rem 0 4rem;
   }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .contact__info {
     gap: 3.2rem;
     flex-direction: column;
@@ -101,7 +100,11 @@ textarea::placeholder {
     flex: unset;
   }
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
+  .contact__form .input-groups {
+    display: flex;
+    flex-direction: column;
+  }
   .contact {
     padding: 1.6rem;
   }
@@ -114,10 +117,9 @@ textarea::placeholder {
     flex: unset;
   }
   .contact__form {
-    padding:1.6rem;
+    padding: 1.6rem;
   }
   .contact__form input {
     padding: 8px 1.2rem;
   }
 }
-

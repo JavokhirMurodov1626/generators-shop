@@ -1,18 +1,21 @@
 import "./Contact.css";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="contact container" id="contact">
-      <h2 className="contact__title text-center">Biz bilan bog'laning</h2>
+      <h2 className="contact__title text-center">{t('contact.title')}</h2>
       <div className="contact__info">
         <form className="contact__form">
           <div className="input-groups">
             <div className="group">
               <label htmlFor="name" className="mb-1">
-                Ism
+                {t('contact.form.input1.label')}
               </label>
               <input
-                placeholder="Ismingizni kiriting"
+                placeholder={t('contact.form.input1.placeholder')}
                 className="form-control"
                 type="text"
                 id="name"
@@ -21,10 +24,10 @@ const Contact = () => {
             </div>
             <div className="group">
               <label htmlFor="number" className="mb-1">
-                Telefon raqam
+                {t('contact.form.input2.label')}
               </label>
               <input
-                placeholder="Raqamingizni kiriting"
+                placeholder={t('contact.form.input2.placeholder')}
                 className="form-control"
                 type="number"
                 id="number"
@@ -33,15 +36,15 @@ const Contact = () => {
             </div>
           </div>
           <label htmlFor="floatingTextarea" className="mb-1">
-            Qiziqtirgan savolingiz
+            {t('contact.form.input3.label')}
           </label>
           <textarea
             className="form-control"
-            placeholder="Xabar matnini kiriting"
+            placeholder={t('contact.form.input3.placeholder')}
             id="floatingTextarea"
           ></textarea>
 
-          <button className="contact-btn">Yuborish</button>
+          <button className="contact-btn">{t('contact.form.button')}</button>
         </form>
         <div className="contact__map">
           <iframe

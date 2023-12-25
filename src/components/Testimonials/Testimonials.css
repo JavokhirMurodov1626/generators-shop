@@ -63,6 +63,7 @@
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 2.4rem !important;
+  flex: 1;
 }
 .testimonials-wrap .swiper-slide .line {
   width: 100%;

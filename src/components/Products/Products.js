@@ -1,45 +1,27 @@
 import "./Products.css";
 import { useEffect, useState } from "react";
-import localData from "../../data";
+import { productsList} from "../../data";
+import { useTranslation } from "react-i18next";
 
-const tabs = [
-  {
-    id: 1,
-    name: "Barchasi",
-    type: "all",
-  },
-  {
-    id: 2,
-    name: "Gaz",
-    type: "gas",
-  },
-  {
-    id: 3,
-    name: "Benzin",
-    type: "petrol",
-  },
-  {
-    id: 4,
-    name: "Dizel",
-    type: "diesel",
-  },
-];
+import useData from "../../data";
 
 const Products = () => {
   const [activeTabType, setActiveTabType] = useState("all");
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [filteredProducts, setFilteredProducts] = useState(
-    localData.productsList
+    productsList
   );
+  const { t } = useTranslation();
+  const { tabs } = useData();
 
   const filterProducts = (type) => {
     setCurrentPage(1);
     setActiveTabType(type);
     if (type === "all") {
-      setFilteredProducts(localData.productsList);
+      setFilteredProducts(productsList);
     } else {
-      const filteredProducts = localData.productsList.filter(
+      const filteredProducts = productsList.filter(
         (product) => product.type === type
       );
       setFilteredProducts(filteredProducts);
@@ -57,7 +39,7 @@ const Products = () => {
 
   return (
     <section id="products" className="products container ">
-      <h2 className="title">Bizning mahsulotlar</h2>
+      <h2 className="title">{t('products.title')}</h2>
       <div className="products__navigation">
         {tabs.map((tab) => {
           return (
@@ -84,7 +66,7 @@ const Products = () => {
         {products.map((product) => {
           return (
             <article className="product" key={product.id}>
-              <img src={product.img} alt="product" />
+              <img loading="lazy" src={product.img} alt="product" />
             </article>
           );
         })}
@@ -96,7 +78,7 @@ const Products = () => {
       )}
       {products.length !== filteredProducts.length && (
         <button className="btn-load" onClick={loadProducts}>
-          Ko'proq ko'rish
+         {t('products.button')}
         </button>
       )}
     </section>

@@ -1,19 +1,19 @@
 import "./Features.css";
 import pattern from "../../assets/icons/features_pattern.svg";
-import staticData from "../../data";
+import useData from "../../data";
+import { useTranslation } from "react-i18next";
+
 const Features = () => {
+  const { t } = useTranslation();
+
+  const data = useData();
   return (
     <section className="features container ">
-      <h2 className="features__title">Nima uchun bizni tanlashingiz kerak?</h2>
-      <p className="features__text">
-        Muayyan ehtiyojlar ishonchlilik va barqaror ishlashni talab qiladi. Nega
-        benzin, gaz va dizel generatorlari tanlovimiz boshqalardan ustun
-        turishini bilib oling, ular quvvat, chidamlilik va xotirjamlikni
-        ta'minlaydi.
-      </p>
+      <h2 className="features__title">{t("features.title")}</h2>
+      <p className="features__text">{t("features.text")}</p>
 
       <div className="features__grid">
-        {staticData.features.map((feature) => {
+        {data.features.map((feature) => {
           return (
             <div className="features__grid-box" key={feature.title}>
               <img

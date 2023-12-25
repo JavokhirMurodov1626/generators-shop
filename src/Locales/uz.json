@@ -1,0 +1,88 @@
+{
+  "navigation": {
+    "about": "Biz haqimizda",
+    "projects": "Loyihalar",
+    "products": "Mahsulotlar",
+    "button": "Buyurtma"
+  },
+  "hero": {
+    "title": "Har qanday ehtiyoj uchun sifatli generatorlar",
+    "text": " HaoYuan ga xush kelibsiz, ishonchli dizel, gaz va benzin generatorlari uchun yagona markaz! Biz jismoniy shaxslar, korxonalar va barcha o'lchamdagi qurilish loyihalari ehtiyojlariga mos keladigan keng turdagi generatorlarni taklif etamiz.",
+    "button": "Bog'lanish"
+  },
+  "products": {
+    "title": "Bizning mahsulotlar",
+    "tab1": "Barchasi",
+    "tab2": "Gaz",
+    "tab3": "Dizel",
+    "tab4": "Benzin",
+    "button": "K'oproq ko'rish"
+  },
+
+  "features": {
+    "title": "Nima uchun bizni tanlashingiz kerak?",
+    "text": "Muayyan ehtiyojlar ishonchlilik va barqaror ishlashni talab qiladi. Nega benzin, gaz va dizel generatorlari tanlovimiz boshqalardan ustun turishini bilib oling, ular quvvat, chidamlilik va xotirjamlikni ta'minlaydi.",
+
+    "feature1": {
+      "title": "Chidamlilik",
+      "text": "Mahsulotimiz 30 dan ortiq har xil chidamlilikka sinovlaridan o'tgan va uzoq muddatli energiya ishlab chiqarish, uzoq muddatli birlik, yuqori sifat va ishonchlilikka ega."
+    },
+    "feature2": {
+      "title": "Avtomatik boshqaruv",
+      "text": "Uskunamizmi avtomatik boshqarishni amalga oshirish uchun mikrokompyuterning aqlli boshqaruvchisi va xalqaro markali o'chirgich ishlatiladi"
+    },
+    "feature3": {
+      "title": "Noqulay sharoit",
+      "text": "Yuqori harorat, qattiq anamal sovuq, yuqori namlik, qum va chang kabi turli xil murakkab muhit va neft ish sharoitlariga moslashtirilgan."
+    },
+    "feature4": {
+      "title": "Tejamkorlik",
+      "text": "Yuqori bosim nisbati super zaryadlovchiga mos kelishi havo olish hajmini oshiradi, yonishni optimallashtiradi va yoqilg'ini sezilarli darajada tejaydi."
+    }
+  },
+
+  "testimonials": {
+    "title": "Mijozlarimizdan biz haqimizda eshiting",
+    "testimonial1": "Sifati juda yaxshi，sotuv menejerlarining ham momilasi juda momilali,yetkazib berish vaqtiyam o'z vaqtida.Uskuna stabilni o'z maromida ishlayapti.Umuman olib qaraganda yomon emas."
+  },
+  "questions": {
+    "title": "Qiziqqan savollaringizga javobni shu yerdan oling!",
+    "question1": {
+      "text": "Bu generatorlar ATS limi?",
+      "answer": "Ha, ATS li"
+    },
+    "question2": {
+      "text": "Bu generatorlarni sotib olganimizdan so'ng  serviz markazlaringiz bormi?",
+      "answer": "Ha, mutaxassislarimiz bor."
+    },
+    "question3": {
+      "text": "Sizlarda viloyatlarga ham olib borib berish xizmati ham mavjudmi？",
+      "answer": "Ha, bor"
+    },
+    "question4": {
+      "text": "Generatorlaringiz shovqinsizmi?",
+      "answer": " Ha shovqinsizlari ham bor, narxida farqi qiladi."
+    }
+  },
+
+  "contact": {
+    "title": "Biz bilan bog'laning",
+    "form": {
+      "input1": { "placeholder": "Ismingizni kiriting", "label": "Ism" },
+      "input2": { "placeholder": "Raqamingizni kiriting", "label": "Telefon" },
+      "input3": {
+        "placeholder": "Xabar matnini kiriting",
+        "label": "Qiziqtirgan savolingiz"
+      },
+      "button": "Yuborish"
+    }
+  },
+  
+  "footer": {
+    "header1": "Biz bilan aloqa",
+    "header2": "Manzil",
+    "address1": "Toshkent viloyati",
+    "address2": "Zangiota tumani",
+    "address3": "Qatortol, Tokzor M.F.Y"
+  }
+}
