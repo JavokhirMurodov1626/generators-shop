@@ -15,7 +15,7 @@ const Features = () => {
       <div className="features__grid">
         {staticData.features.map((feature) => {
           return (
-            <div className="features__grid-box">
+            <div className="features__grid-box" key={feature.title}>
               <img
                 className="features__grid-box__pattern"
                 src={pattern}

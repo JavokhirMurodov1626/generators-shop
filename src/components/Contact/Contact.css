@@ -113,5 +113,11 @@ textarea::placeholder {
     height: 300px;
     flex: unset;
   }
+  .contact__form {
+    padding:1.6rem;
+  }
+  .contact__form input {
+    padding: 8px 1.2rem;
+  }
 }
 

@@ -31,13 +31,18 @@ const Navigation = () => {
           </Link>
         </div>
         <ul className="navigation__menu ">
-          <Link to="/about">
-            <li className="navigation__item">
-              <Link className="navigation__link">Biz haqimizda</Link>
-            </li>
-          </Link>
+          <li className="navigation__item">
+            <Link to="about" className="navigation__link">
+              Biz haqimizda
+            </Link>
+          </li>
+
           {menu.map((item) => (
-            <li className="navigation__item" onClick={()=>scroll(item.id)}>
+            <li
+              key={item.id}
+              className="navigation__item"
+              onClick={() => scroll(item.id)}
+            >
               <Link className="navigation__link">{item.name}</Link>
             </li>
           ))}

@@ -13,7 +13,7 @@ const Contact = () => {
               </label>
               <input
                 placeholder="Ismingizni kiriting"
-                class="form-control"
+                className="form-control"
                 type="text"
                 id="name"
                 name="name"
@@ -25,7 +25,7 @@ const Contact = () => {
               </label>
               <input
                 placeholder="Raqamingizni kiriting"
-                class="form-control"
+                className="form-control"
                 type="number"
                 id="number"
                 name="number"
@@ -36,7 +36,7 @@ const Contact = () => {
             Qiziqtirgan savolingiz
           </label>
           <textarea
-            class="form-control"
+            className="form-control"
             placeholder="Xabar matnini kiriting"
             id="floatingTextarea"
           ></textarea>
