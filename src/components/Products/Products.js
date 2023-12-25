@@ -56,7 +56,7 @@ const Products = () => {
   }, [filteredProducts, currentPage]);
 
   return (
-    <section className="products container">
+    <section id="products" className="products container ">
       <h2 className="title">Bizning mahsulotlar</h2>
       <div className="products__navigation">
         {tabs.map((tab) => {

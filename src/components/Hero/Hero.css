@@ -1,4 +1,3 @@
-
 .hero__wrap {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -66,4 +65,55 @@
 
 .hero .swiper-button-next {
   color: linear-gradient(262deg, #fb8e35 -1.78%, #fe5005 107.12%) !important;
+}
+@media screen and (max-width:1440px) {
+  .hero__wrap {
+    padding: 4rem 4rem 0 4rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero__wrap {
+    gap: 2.4rem;
+    padding: 3.2rem 3.2rem 0 3.2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero__wrap {
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .hero__left {
+    grid-column: 1/13;
+    align-items: center;
+    padding-right: 0;
+  }
+  .hero .swiper-wrap {
+    grid-column: 1/13;
+    grid-row: 2/3;
+  }
+  .hero__title {
+    text-align: center;
+  }
+  .hero__text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero__wrap {
+    padding: 1.6rem 1.6rem 0 1.6rem;
+  }
+
+  .hero__title {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 1.6rem;
+  }
+  .hero__text {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 1.6rem !important;
+  }
 }

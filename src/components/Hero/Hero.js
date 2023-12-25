@@ -1,6 +1,7 @@
 import "./Hero.css";
 import { EffectFade, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link as ScrollLink } from "react-scroll";
 import generator1 from "../../assets/images/hero_slide_1.webp";
 import generator2 from "../../assets/images/hero_slide_2.webp";
 import generator3 from "../../assets/images/hero_slide_3.webp";
@@ -21,7 +22,9 @@ const Hero = () => {
             ob-havo sharoiti uchun ishonchli energiya yechimlari bilan
             makoningizni ko'taring.
           </p>
-          <button className=" hero__btn">Bog'lanish</button>
+          <ScrollLink to="contact" className=" hero__btn">
+            Bog'lanish
+          </ScrollLink>
         </div>
         <div className="swiper-wrap">
           <Swiper

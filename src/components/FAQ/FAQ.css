@@ -16,7 +16,6 @@
   font-family: Inter-Regular;
   font-size: 24px;
   line-height: 40px;
-  margin-bottom: 4.8rem;
   margin-bottom: 4.8rem !important;
 }
 .faq .question-list {
@@ -78,4 +77,57 @@
 }
 .faq .answer p {
   overflow: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+  .faq {
+    padding: 5.6rem 4rem 0 4rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .faq__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .faq__text {
+    margin-bottom: 3.2rem !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .faq {
+    padding: 1.6rem;
+  }
+  .faq__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 8px;
+  }
+
+  .faq__text {
+    font-size: 18px;
+    line-height: 3.2rem;
+    margin-bottom: 2.4rem !important;
+  }
+  .faq .question {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 1.6rem !important;
+  }
+  .faq .question-list {
+    gap: 2.4rem;
+    padding: 2.4rem !important;
+  }
+  .question-item__top {
+    gap: 2.4rem;
+  }
+  .question-item__top .icon {
+    width: 2.4rem;
+  }
+
+  .faq .answer {
+    font-size:18px;
+    line-height: 32px;
+  }
 }
