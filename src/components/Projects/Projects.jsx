@@ -26,7 +26,7 @@ import { Navigation } from "swiper/modules";
 
 const Projects = () => {
   return (
-    <section className="projects container">
+    <section className="projects container" id="projects">
       <h2 className="project__title">Loyihalar</h2>
       <div className="swiper-wrap">
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
