@@ -83,6 +83,10 @@ textarea::placeholder {
 .contact__map iframe {
   border-radius: 24px;
 }
+.Toastify__toast-body{
+  font-size: 16px;
+  font-family: Inter-Regular;
+}
 
 @media screen and (max-width: 1440px) {
   .contact {

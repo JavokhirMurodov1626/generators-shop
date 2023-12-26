@@ -74,7 +74,9 @@
         "placeholder": "Xabar matnini kiriting",
         "label": "Qiziqtirgan savolingiz"
       },
-      "button": "Yuborish"
+      "button": "Yuborish",
+      "success": "Xabaringiz uchun rahmat! Tez orada siz bilan bog'lanamiz.",
+      "error" : "Xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
     }
   },
   
