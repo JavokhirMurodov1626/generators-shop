@@ -1,6 +1,6 @@
+import { useTranslation } from "react-i18next";
 import aboutVideo from "../assets/video/haoYuan_hero_video.mp4";
 import "./About.css";
-import { useTranslation } from "react-i18next";
 
 const About = () => {
   const { t } = useTranslation();
