@@ -1,6 +1,4 @@
 import "./App.css";
-import { RouterProvider } from "react-router-dom";
-import routes from "./routes";
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
@@ -12,8 +10,27 @@ import "swiper/css/pagination";
 import "./i18n";
 
 
-function App() {
-  return <RouterProvider router={routes} />;
-}
+import { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Root from "./pages/Root";
+import Home from "./pages/Home";
+
+const About = lazy(() => import("./pages/About"));
+
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={<Root />}
+        >
+          <Route index element={<Home />} />
+          <Route path="about" element={<Suspense fallback={<div>Loading...</div>}><About /></Suspense>} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
