@@ -1,6 +1,5 @@
 @import url("./assets/styles/base.css");
 @import url("./assets/styles/typography.css");
-@import url("./assets/styles/bootstrap.min.css");
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
