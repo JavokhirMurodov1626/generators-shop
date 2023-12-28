@@ -1,0 +1,129 @@
+.about-video {
+  padding: 0 12rem;
+  width: 100%;
+  height: 100dvh;
+  max-height: 1080px;
+  position: relative;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-video .content {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 12rem;
+  text-align: center;
+}
+
+.about-video .content .text {
+  color: aliceblue;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.about-text-boxes {
+  padding: 56px 12rem;
+}
+
+.about-text-boxes li {
+  color: #334155;
+  font-family: Inter-Regular;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 1.6rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.about-text-boxes li::before {
+  display: block;
+  content: "\2022";
+  position: absolute;
+  left: -2rem;
+  top: 0;
+}
+
+.about-text-boxes h2 {
+  color: #0f172a;
+  font-family: Inter-Bold;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1440px) {
+  .about-video {
+    padding: 48px 4rem;
+  }
+  .about-text-boxes {
+    padding: 0 4rem;
+  }
+  .about-text-boxes li {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  .about-text-boxes h2 {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-text-boxes {
+    padding-left: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-video {
+    padding: 0;
+  }
+
+  .about-video .content {
+    padding: 0 4rem;
+  }
+  .about-text-boxes {
+    padding: 24px 16px;
+    padding-left: 36px;
+  }
+  .about-text-boxes li {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  .about-text-boxes h2 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-video .content {
+    padding: 0 2.4rem;
+  }
+  .about-video .content .text {
+    font-size: 2.4rem;
+  }
+  .about-text-boxes {
+    padding: 24px 16px;
+    padding-left: 36px;
+  }
+  .about-text-boxes li {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    padding-left: 0;
+  }
+  .about-text-boxes h2 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+}

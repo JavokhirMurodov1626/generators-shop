@@ -45,6 +45,7 @@
     "title": "Mijozlarimizdan biz haqimizda eshiting",
     "testimonial1": "Sifati juda yaxshi，sotuv menejerlarining ham momilasi juda momilali,yetkazib berish vaqtiyam o'z vaqtida.Uskuna stabilni o'z maromida ishlayapti.Umuman olib qaraganda yomon emas."
   },
+
   "questions": {
     "title": "Qiziqqan savollaringizga javobni shu yerdan oling!",
     "question1": {
@@ -76,15 +77,23 @@
       },
       "button": "Yuborish",
       "success": "Xabaringiz uchun rahmat! Tez orada siz bilan bog'lanamiz.",
-      "error" : "Xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
+      "error": "Xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
     }
   },
-  
+
   "footer": {
     "header1": "Biz bilan aloqa",
     "header2": "Manzil",
     "address1": "Toshkent viloyati",
     "address2": "Zangiota tumani",
     "address3": "Qatortol, Tokzor M.F.Y"
+  },
+
+  "about": {
+    "intro": " HaoYuan ga xush kelibsiz, ishonchli dizel, gaz va benzin generatorlari uchun yagona markaz!",
+    "text1": "Hao Yuan Electric Qurilish kompaniyasi 2009-yilda tashkil etilgan bo'lib, u - jahonga mashhur Veyfan shahrida joylashgan.",
+    "text2": "Kompaniya 40 000 kvadrat metr maydonni egallaydi va 18 500 kvadrat metr ishlab chiqarish sexiga ega. Bu o'rta va yuqori darajadagi yerdan foydalanish, dengiz dizel generatorlari to'plami, gaz generatorlari va biogaz generatorlari to'plamini ishlab chiqarish, sotish va xalqaro savdosi bilan shug'ullanadigan keng qamrovli korxona. Kompaniya tashkil etilganidan beri yuqori texnologiyaga, yuqori boshlang'ich nuqtasiga, yuqori talablarga, keng ko'lamli boshqaruv strategiyasiga muvofiq bo'lib, malakali, ishonchli va qoniqarli mahsulotlarni taqdim etadi.",
+    "text3": " U asosan 10 dan ortiq 200 ta texnik xususiyatlarni o'z ichiga oladi, jumladan Cummins generator birligi, Parkins generator bloki, Yuchai generator bloki,ularning quvvati 10 kVt dan 3000 kVtgacha.",
+    "text4": " Kompaniya turli sohalardagi foydalanuvchilar uchun quvvat tizimining umumiy yechimini taqdim etadi va u muhandislik dizayni, marketing, uskunalarni o'rnatish, atrof-muhitni muhofaza qilish, shovqinni kamaytirish va texnik xizmatlarni birlashtirgan korxonadir. Kompaniya korxonada to'liq sifat nazorati tizimini yaratdi va ISO9001-2000 va boshqa sertifikatlash tizimlaridan o'tdi."
   }
 }
