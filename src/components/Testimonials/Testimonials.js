@@ -16,13 +16,13 @@ const Testimonials = () => {
   return (
     <section className="testimonials container">
       <div className="testimonials-wrap container">
-        <img
+        <img loading="lazy"
           className="pattern testimonials__pattern-left"
           src={patternLeft}
           alt=""
         />
 
-        <img
+        <img loading="lazy"
           className="pattern testimonials__pattern-right"
           src={patternRight}
           alt=""

@@ -17,12 +17,13 @@ const Features = () => {
           return (
             <div className="features__grid-box" key={feature.title}>
               <img
+                loading="lazy"
                 className="features__grid-box__pattern"
                 src={pattern}
                 alt=""
               />
               <div className="features__grid-box__icon">
-                <img src={feature.icon} alt="" />
+                <img loading="lazy" src={feature.icon} alt="" />
               </div>
               <h3 className="title">{feature.title}</h3>
               <p className="text">{feature.text}</p>

@@ -44,14 +44,14 @@ const Projects = () => {
 
             <div className="swiper-box__right">
               <div className="wide">
-                <img src={project1Wide} alt="project" />
+                <img loading="lazy"  src={project1Wide} alt="project" />
               </div>
               <div className="smalls">
                 <div className="small-one">
-                  <img src={project1Small1} alt="project" />
+                  <img loading="lazy"  src={project1Small1} alt="project" />
                 </div>
                 <div className="small-two">
-                  <img src={project1Small2} alt="project" />
+                  <img loading="lazy"  src={project1Small2} alt="project" />
                 </div>
               </div>
             </div>
@@ -70,18 +70,18 @@ const Projects = () => {
             <div className="swiper-box__right">
               <div className="row">
                 <div className="wide long-height">
-                  <img src={project2Wide1} alt="project" />
+                  <img loading="lazy" src={project2Wide1} alt="project" />
                 </div>
                 <div className="wide long-height">
-                  <img src={project2Wide2} alt="project" />
+                  <img loading="lazy" src={project2Wide2} alt="project" />
                 </div>
               </div>
               {/* <div className="smalls">
                 <div className="small-one">
-                  <img src={project1Small1} alt="project" />
+                  <img loading="lazy" src={project1Small1} alt="project" />
                 </div>
                 <div className="small-two">
-                  <img src={project1Small2} alt="project" />
+                  <img loading="lazy" src={project1Small2} alt="project" />
                 </div>
               </div> */}
             </div>
@@ -100,10 +100,10 @@ const Projects = () => {
             <div className="swiper-box__right">
               <div className="row">
                 <div className="wide long-height">
-                  <img src={project3Wide1} alt="project" />
+                  <img loading="lazy"  src={project3Wide1} alt="project" />
                 </div>
                 <div className="wide long-height">
-                  <img src={project3Wide2} alt="project" />
+                  <img loading="lazy"  src={project3Wide2} alt="project" />
                 </div>
               </div>
             </div>
@@ -122,10 +122,10 @@ const Projects = () => {
             <div className="swiper-box__right">
               <div className="row">
                 <div className="wide long-height">
-                  <img src={project5Wide1} alt="project" />
+                  <img loading="lazy" src={project5Wide1} alt="project" />
                 </div>
                 <div className="wide long-height">
-                  <img src={project5Wide2} alt="project" />
+                  <img loading="lazy" src={project5Wide2} alt="project" />
                 </div>
               </div>
             </div>
@@ -144,10 +144,10 @@ const Projects = () => {
             <div className="swiper-box__right">
               <div className="row">
                 <div className="wide long-height">
-                  <img src={project6Wide1} alt="project" />
+                  <img loading="lazy" src={project6Wide1} alt="project" />
                 </div>
                 <div className="wide long-height">
-                  <img src={project6Wide2} alt="project" />
+                  <img loading="lazy" src={project6Wide2} alt="project" />
                 </div>
               </div>
             </div>
@@ -165,7 +165,7 @@ const Projects = () => {
             <div className="swiper-box__right ">
               <div className="row">
                 <div className="wide long-height">
-                  <img src={project7Wide1} alt="project" />
+                  <img loading="lazy" src={project7Wide1} alt="project" />
                 </div>
               </div>
             </div>
@@ -183,7 +183,7 @@ const Projects = () => {
             <div className="swiper-box__right">
               <div className="row">
                 <div className="col">
-                  <img src={porject4Wide1} alt="project" />
+                  <img loading="lazy" src={porject4Wide1} alt="project" />
                 </div>
               </div>
             </div>
