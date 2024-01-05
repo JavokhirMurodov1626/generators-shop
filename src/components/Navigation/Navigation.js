@@ -19,22 +19,31 @@ const Navigation = () => {
     navigation.classList.toggle("active");
   };
 
+  const removeHamburgerMenu = () => {
+    let navigation = document.querySelector(".navigation__menu");
+    navigation.classList.remove("active");
+  };
+
   const scroll = (id) => {
     const productsSection = document.querySelector(`#${id}`);
-    productsSection.scrollIntoView({ behavior: "smooth" });
-    handleHamburgerClick();
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: "smooth" });
+      handleHamburgerClick();
+    } else {
+      removeHamburgerMenu();
+    }
   };
 
   return (
     <nav className="navigation container">
       <div className="navigation__left">
         <div className="navigation__logo">
-          <Link to="/">
+          <Link to="/" onClick={removeHamburgerMenu}>
             <img src={logo} alt="" />
           </Link>
         </div>
         <ul className="navigation__menu ">
-          <li className="navigation__item">
+          <li className="navigation__item" onClick={removeHamburgerMenu}>
             <Link to="about" className="navigation__link">
               {t("navigation.about")}
             </Link>
